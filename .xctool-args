@@ -1,0 +1,7 @@
+[
+  "-project", "Quotes.xcodeproj",
+  "-scheme", "Quotes",
+  "-configuration", "Debug",
+  "-sdk", "iphonesimulator",
+  "-arch", "i386"
+]

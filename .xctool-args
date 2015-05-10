@@ -1,5 +1,5 @@
 [
-  "-project", "Quotes.xcodeproj",
+  "-workspace", "Quotes.xcworkspace",
   "-scheme", "Quotes",
   "-configuration", "Debug",
   "-sdk", "iphonesimulator",

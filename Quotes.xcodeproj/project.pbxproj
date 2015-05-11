@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7E38EFDFB367D262FBDC0FEF /* Pods_QuotesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE26AA17E42777E35A26EF1C /* Pods_QuotesKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		952A24F7A8E22231785D57B5 /* Pods_QuotesKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76BB3F8FE5C02DC07CE7BFCD /* Pods_QuotesKitTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B96181DA1B00FDD800145AC0 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96181D91B00FDD800145AC0 /* QuotesViewController.swift */; };
 		B9CC45AA1AFEABCA00A82355 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CC45A21AFEABCA00A82355 /* AppDelegate.swift */; };
 		B9CC45AC1AFEABCA00A82355 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CC45A61AFEABCA00A82355 /* LaunchScreen.xib */; };
 		B9CC45AD1AFEABCA00A82355 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9CC45A81AFEABCA00A82355 /* Images.xcassets */; };
@@ -68,6 +69,7 @@
 		76BB3F8FE5C02DC07CE7BFCD /* Pods_QuotesKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuotesKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8887BA4B1AF45DD1F334C2F7 /* Pods-QuotesKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuotesKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuotesKitTests/Pods-QuotesKitTests.release.xcconfig"; sourceTree = "<group>"; };
 		AE26AA17E42777E35A26EF1C /* Pods_QuotesKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuotesKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B96181D91B00FDD800145AC0 /* QuotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuotesViewController.swift; path = "Quotes/Classes/View Controllers/QuotesViewController.swift"; sourceTree = "<group>"; };
 		B9CC457A1AFEAB1700A82355 /* Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9CC458F1AFEAB1700A82355 /* QuotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9CC45A21AFEABCA00A82355 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +133,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B96181DB1B00FDDF00145AC0 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B96181D91B00FDD800145AC0 /* QuotesViewController.swift */,
+			);
+			name = "View Controllers";
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		B9CC45711AFEAB1700A82355 = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				B9CC45A11AFEABCA00A82355 /* Application */,
+				B96181DB1B00FDDF00145AC0 /* View Controllers */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -512,6 +524,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9CC45AA1AFEABCA00A82355 /* AppDelegate.swift in Sources */,
+				B96181DA1B00FDD800145AC0 /* QuotesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

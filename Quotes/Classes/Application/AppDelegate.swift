@@ -13,9 +13,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow? = {
         let window = UIWindow(frame: UIScreen.mainScreen().bounds)
-
         window.backgroundColor = .whiteColor()
-        window.rootViewController = QuotesViewController()
+
+        let navigationController = UINavigationController(rootViewController: QuotesViewController())
+        window.rootViewController = navigationController
 
         return window
     }()

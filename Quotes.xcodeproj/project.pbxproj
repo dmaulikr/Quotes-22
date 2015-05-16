@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E38EFDFB367D262FBDC0FEF /* Pods_QuotesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE26AA17E42777E35A26EF1C /* Pods_QuotesKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		952A24F7A8E22231785D57B5 /* Pods_QuotesKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76BB3F8FE5C02DC07CE7BFCD /* Pods_QuotesKitTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B96181DA1B00FDD800145AC0 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96181D91B00FDD800145AC0 /* QuotesViewController.swift */; };
 		B9CC45AA1AFEABCA00A82355 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CC45A21AFEABCA00A82355 /* AppDelegate.swift */; };
@@ -106,7 +105,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E38EFDFB367D262FBDC0FEF /* Pods_QuotesKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,12 +321,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9CC45D91AFEBB3800A82355 /* Build configuration list for PBXNativeTarget "QuotesKit" */;
 			buildPhases = (
-				46B73FAD25F105E4A7FE0665 /* Check Pods Manifest.lock */,
 				B9CC45B61AFEBB3700A82355 /* Sources */,
 				B9CC45B71AFEBB3700A82355 /* Frameworks */,
 				B9CC45B81AFEBB3700A82355 /* Headers */,
 				B9CC45B91AFEBB3700A82355 /* Resources */,
-				2A04AC45A38835FBC06BE02F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -441,36 +437,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2A04AC45A38835FBC06BE02F /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuotesKit/Pods-QuotesKit-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		46B73FAD25F105E4A7FE0665 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		67225B843DFB599D0E863EE1 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -725,7 +691,6 @@
 		};
 		B9CC45D51AFEBB3800A82355 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 153BA7BE05D2036640C5FE2C /* Pods-QuotesKit.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -749,7 +714,6 @@
 		};
 		B9CC45D61AFEBB3800A82355 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2957BD08E62FE8CA5200A49 /* Pods-QuotesKit.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CURRENT_PROJECT_VERSION = 1;

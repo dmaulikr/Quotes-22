@@ -10,6 +10,7 @@
 		B949A56B1B09232B002FBBA3 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B949A56A1B09232B002FBBA3 /* Quick.framework */; };
 		B949A56D1B09232E002FBBA3 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B949A56C1B09232E002FBBA3 /* Nimble.framework */; };
 		B96181DA1B00FDD800145AC0 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96181D91B00FDD800145AC0 /* QuotesViewController.swift */; };
+		B98916491B092AB600EF1AEC /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98916481B092AB600EF1AEC /* Quote.swift */; };
 		B9CC45AA1AFEABCA00A82355 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CC45A21AFEABCA00A82355 /* AppDelegate.swift */; };
 		B9CC45AC1AFEABCA00A82355 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CC45A61AFEABCA00A82355 /* LaunchScreen.xib */; };
 		B9CC45AD1AFEABCA00A82355 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9CC45A81AFEABCA00A82355 /* Images.xcassets */; };
@@ -69,6 +70,7 @@
 		B949A56A1B09232B002FBBA3 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		B949A56C1B09232E002FBBA3 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		B96181D91B00FDD800145AC0 /* QuotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuotesViewController.swift; path = "Quotes/Classes/View Controllers/QuotesViewController.swift"; sourceTree = "<group>"; };
+		B98916481B092AB600EF1AEC /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Quote.swift; path = QuotesKit/Classes/Models/Quote.swift; sourceTree = SOURCE_ROOT; };
 		B9CC457A1AFEAB1700A82355 /* Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9CC458F1AFEAB1700A82355 /* QuotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9CC45A21AFEABCA00A82355 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,23 @@
 			);
 			name = "View Controllers";
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		B98916441B092A7600EF1AEC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B989164A1B092ABF00EF1AEC /* Models */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B989164A1B092ABF00EF1AEC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B98916481B092AB600EF1AEC /* Quote.swift */,
+			);
+			name = Models;
+			path = "Data Sources";
 			sourceTree = "<group>";
 		};
 		B9CC45711AFEAB1700A82355 = {
@@ -208,6 +227,7 @@
 		B9CC45DB1AFEBBCC00A82355 /* QuotesKit */ = {
 			isa = PBXGroup;
 			children = (
+				B98916441B092A7600EF1AEC /* Classes */,
 				B9CC45DC1AFEBBCC00A82355 /* Other Sources */,
 				B9CC45DE1AFEBBCC00A82355 /* Resources */,
 			);
@@ -480,6 +500,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B98916491B092AB600EF1AEC /* Quote.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

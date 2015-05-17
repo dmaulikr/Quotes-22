@@ -333,6 +333,7 @@
 				B9CC45C11AFEBB3700A82355 /* Sources */,
 				B9CC45C21AFEBB3700A82355 /* Frameworks */,
 				B9CC45C31AFEBB3700A82355 /* Resources */,
+				B949A56E1B092394002FBBA3 /* Carthage Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -432,6 +433,22 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+			);
+			name = "Carthage Copy Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		B949A56E1B092394002FBBA3 /* Carthage Copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
 			);
 			name = "Carthage Copy Frameworks";
 			outputPaths = (

@@ -329,6 +329,7 @@
 				B9CC45B71AFEBB3700A82355 /* Frameworks */,
 				B9CC45B81AFEBB3700A82355 /* Headers */,
 				B9CC45B91AFEBB3700A82355 /* Resources */,
+				B949A5691B091F7B002FBBA3 /* Carthage Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -470,6 +471,21 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		B949A5691B091F7B002FBBA3 /* Carthage Copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+			);
+			name = "Carthage Copy Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 		BE17AD57E845ED50B601CC45 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;

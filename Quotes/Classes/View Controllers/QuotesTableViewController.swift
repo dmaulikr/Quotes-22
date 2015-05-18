@@ -1,5 +1,5 @@
 //
-//  QuotesViewController.swift
+//  QuotesTableViewController.swift
 //  Quotes
 //
 //  Created by Julian Grosshauser on 11/05/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QuotesViewController: UITableViewController {
+class QuotesTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

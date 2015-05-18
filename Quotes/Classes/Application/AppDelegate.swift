@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window.backgroundColor = .whiteColor()
 
-        let navigationController = UINavigationController(rootViewController: QuotesViewController())
+        let navigationController = UINavigationController(rootViewController: QuotesTableViewController())
         window.rootViewController = navigationController
 
         return window

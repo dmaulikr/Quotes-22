@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import QuotesKit
 
 class QuotesTableViewController: UITableViewController {
     

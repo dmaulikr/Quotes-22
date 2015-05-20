@@ -19,5 +19,7 @@ class QuotesTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        tableView.registerClass(QuotesTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
     }
 }

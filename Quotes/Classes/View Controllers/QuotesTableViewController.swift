@@ -11,7 +11,11 @@ import QuotesKit
 
 class QuotesTableViewController: UITableViewController {
 
+    //MARK: Properties
+
     private let cellIdentifier = "quoteCell"
+
+    //MARK: UIViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()

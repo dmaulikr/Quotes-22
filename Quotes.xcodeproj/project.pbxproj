@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B92B091B1B0A5DC500365E89 /* QuotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92B091A1B0A5DC500365E89 /* QuotesTableViewCell.swift */; };
 		B92B091D1B0A61D200365E89 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F672BB1B07E25600FDB06A /* RealmSwift.framework */; };
 		B949A56B1B09232B002FBBA3 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B949A56A1B09232B002FBBA3 /* Quick.framework */; };
 		B949A56D1B09232E002FBBA3 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B949A56C1B09232E002FBBA3 /* Nimble.framework */; };
@@ -68,6 +69,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B92B091A1B0A5DC500365E89 /* QuotesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuotesTableViewCell.swift; path = QuotesKit/Classes/Views/QuotesTableViewCell.swift; sourceTree = "<group>"; };
 		B949A56A1B09232B002FBBA3 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		B949A56C1B09232E002FBBA3 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		B96181D91B00FDD800145AC0 /* QuotesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuotesTableViewController.swift; path = "Quotes/Classes/View Controllers/QuotesTableViewController.swift"; sourceTree = "<group>"; };
@@ -125,6 +127,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B92B091C1B0A5DCA00365E89 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B92B091A1B0A5DC500365E89 /* QuotesTableViewCell.swift */,
+			);
+			name = Views;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		B96181DB1B00FDDF00145AC0 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +148,7 @@
 		B98916441B092A7600EF1AEC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B92B091C1B0A5DCA00365E89 /* Views */,
 				B989164A1B092ABF00EF1AEC /* Models */,
 			);
 			path = Classes;
@@ -519,6 +531,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B98916491B092AB600EF1AEC /* Quote.swift in Sources */,
+				B92B091B1B0A5DC500365E89 /* QuotesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,8 @@ import UIKit
 import QuotesKit
 
 class QuotesTableViewController: UITableViewController {
+
+    private let cellIdentifier = "quoteCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()

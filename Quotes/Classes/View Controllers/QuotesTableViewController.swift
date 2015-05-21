@@ -50,4 +50,14 @@ extension QuotesTableViewController: UITableViewDataSource {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return quotes.count
     }
+
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as! QuotesTableViewCell
+
+        let quote = quotes[indexPath.row]
+        cell.textLabel?.text = quote.quote
+        cell.detailTextLabel?.text = quote.author
+
+        return cell
+    }
 }

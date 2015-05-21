@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window.backgroundColor = .whiteColor()
 
-        let navigationController = UINavigationController(rootViewController: QuotesTableViewController())
+        let navigationController = UINavigationController(rootViewController: QuotesTableViewController(realm: Realm()))
         window.rootViewController = navigationController
 
         return window

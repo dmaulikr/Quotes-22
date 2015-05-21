@@ -10,6 +10,6 @@ import RealmSwift
 
 public class Quote: Object {
 
-    dynamic var quote = ""
-    dynamic var author = ""
+    dynamic public var quote = ""
+    dynamic public var author = ""
 }

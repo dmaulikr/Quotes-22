@@ -42,3 +42,12 @@ class QuotesTableViewController: UITableViewController {
         tableView.registerClass(QuotesTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
     }
 }
+
+//MARK: UITableViewDataSource
+
+extension QuotesTableViewController: UITableViewDataSource {
+
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return quotes.count
+    }
+}

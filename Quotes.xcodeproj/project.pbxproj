@@ -20,6 +20,7 @@
 		B9CC45D21AFEBB3700A82355 /* QuotesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CC45BB1AFEBB3700A82355 /* QuotesKit.framework */; };
 		B9CC45D41AFEBB3700A82355 /* QuotesKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9CC45BB1AFEBB3700A82355 /* QuotesKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B9CC45E01AFEBBCC00A82355 /* QuotesKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B9CC45DD1AFEBBCC00A82355 /* QuotesKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9E05B1B1B0FD577008F9FAD /* QuotesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E05B1A1B0FD577008F9FAD /* QuotesTableViewModel.swift */; };
 		B9F672BC1B07E25600FDB06A /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F672BB1B07E25600FDB06A /* RealmSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		B9CC45DD1AFEBBCC00A82355 /* QuotesKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuotesKit.h; sourceTree = "<group>"; };
 		B9CC45DF1AFEBBCC00A82355 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9CC45E41AFEBBD700A82355 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9E05B1A1B0FD577008F9FAD /* QuotesTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuotesTableViewModel.swift; path = "QuotesKit/Classes/View Models/QuotesTableViewModel.swift"; sourceTree = "<group>"; };
 		B9F672BB1B07E25600FDB06A /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,8 +150,9 @@
 		B98916441B092A7600EF1AEC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				B92B091C1B0A5DCA00365E89 /* Views */,
 				B989164A1B092ABF00EF1AEC /* Models */,
+				B9E05B1C1B0FD583008F9FAD /* View Models */,
+				B92B091C1B0A5DCA00365E89 /* Views */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -278,6 +281,15 @@
 				B9CC45E41AFEBBD700A82355 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		B9E05B1C1B0FD583008F9FAD /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				B9E05B1A1B0FD577008F9FAD /* QuotesTableViewModel.swift */,
+			);
+			name = "View Models";
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		C26BD2A8240F10F0DC7CA699 /* Frameworks */ = {
@@ -531,6 +543,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B98916491B092AB600EF1AEC /* Quote.swift in Sources */,
+				B9E05B1B1B0FD577008F9FAD /* QuotesTableViewModel.swift in Sources */,
 				B92B091B1B0A5DC500365E89 /* QuotesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

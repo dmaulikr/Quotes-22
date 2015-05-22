@@ -8,31 +8,13 @@
 
 import UIKit
 import QuotesKit
-import RealmSwift
 
 class QuotesTableViewController: UITableViewController {
 
     //MARK: Properties
 
-    private let realm: Realm
-    private var quotes: Results<Quote>
+    private let viewModel = QuotesTableViewModel()
     private let cellIdentifier = "quoteCell"
-
-    //MARK: Initialization
-
-    init(realm: Realm) {
-        self.realm = realm
-        quotes = realm.objects(Quote)
-
-        super.init(nibName: nil, bundle: nil)
-    }
-
-    required init(coder aDecoder: NSCoder!) {
-        realm = Realm()
-        quotes = realm.objects(Quote)
-
-        super.init(coder: aDecoder)
-    }
 
     //MARK: UIViewController
     
@@ -48,13 +30,13 @@ class QuotesTableViewController: UITableViewController {
 extension QuotesTableViewController: UITableViewDataSource {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return quotes.count
+        return viewModel.quotes.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as! QuotesTableViewCell
 
-        let quote = quotes[indexPath.row]
+        let quote = viewModel.quotes[indexPath.row]
         cell.textLabel?.text = quote.quote
         cell.detailTextLabel?.text = quote.author
 

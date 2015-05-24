@@ -4,5 +4,11 @@
 
 Quotes for iOS
 
+Build dependencies via [Carthage](https://github.com/Carthage/Carthage) first:
+
+``` shell
+$ carthage bootstrap
+```
+
 ## License
 [MIT](LICENSE)

@@ -10,5 +10,14 @@ Build dependencies via [Carthage](https://github.com/Carthage/Carthage) first:
 $ carthage bootstrap
 ```
 
+## Backend
+
+Build dependencies via [Bundler](http://bundler.io) first:
+
+``` shell
+$ cd Backend
+$ bundle install
+```
+
 ## License
 [MIT](LICENSE)

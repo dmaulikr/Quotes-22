@@ -19,5 +19,12 @@ $ cd Backend
 $ bundle install
 ```
 
+To start the server use [Shotgun](https://github.com/rtomayko/shotgun):
+
+``` shell
+$ cd Backend
+$ bundle exec shotgun
+```
+
 ## License
 [MIT](LICENSE)

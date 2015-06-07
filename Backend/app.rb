@@ -3,6 +3,7 @@ require 'bundler/setup'
 require 'sinatra/base'
 require 'active_record'
 
+require_relative 'db/database.rb'
 require_relative 'routes/quotes'
 
 module Quotes
@@ -12,10 +13,7 @@ module Quotes
       set :db_database, 'quotes.db'
     end
 
-    ActiveRecord::Base.establish_connection(
-      adapter: settings.db_adapter,
-      database: settings.db_database
-    )
+    Database.connect(adapter: settings.db_adapter, database: settings.db_database)
 
     use Routes::Quotes
   end

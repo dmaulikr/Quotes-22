@@ -7,9 +7,14 @@ require_relative 'routes/quotes'
 
 module Quotes
   class App < Sinatra::Base
+    configure do
+      set :db_adapter, 'sqlite3'
+      set :db_database, 'quotes.db'
+    end
+
     ActiveRecord::Base.establish_connection(
-      adapter: 'sqlite3',
-      database: 'quotes.db'
+      adapter: settings.db_adapter,
+      database: settings.db_database
     )
 
     use Routes::Quotes

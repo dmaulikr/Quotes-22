@@ -8,7 +8,11 @@
 
 public struct QuotesServer {
 
+    //MARK: Properties
+
     public let serverURL: NSURL
+
+    //MARK: Initialization
 
     public init(serverURL: NSURL) {
         self.serverURL = serverURL

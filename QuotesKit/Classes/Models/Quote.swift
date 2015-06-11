@@ -10,8 +10,12 @@ import RealmSwift
 
 public class Quote: Object {
 
+    //MARK: Properties
+
     dynamic public var quote = ""
     dynamic public var author = ""
+
+    //MARK: Initialization
 
     convenience public init(quote: String, author: String) {
         self.init()

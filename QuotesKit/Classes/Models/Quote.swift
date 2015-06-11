@@ -13,14 +13,10 @@ public class Quote: Object {
     dynamic public var quote = ""
     dynamic public var author = ""
 
-    public init(quote: String, author: String) {
+    convenience public init(quote: String, author: String) {
+        self.init()
+        
         self.quote = quote
         self.author = author
-
-        super.init()
-    }
-
-    required public init() {
-        super.init()
     }
 }

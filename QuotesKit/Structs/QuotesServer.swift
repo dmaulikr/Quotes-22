@@ -11,6 +11,7 @@ public struct QuotesServer {
     //MARK: Properties
 
     public let serverURL: NSURL
+    public let quotesEndpoint = "quotes"
 
     //MARK: Initialization
 

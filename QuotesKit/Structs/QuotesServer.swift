@@ -19,3 +19,7 @@ public struct QuotesServer {
         self.serverURL = serverURL
     }
 }
+
+public func + (lhs: NSURL, rhs: String) -> NSURL {
+    return lhs.URLByAppendingPathComponent(rhs)
+}

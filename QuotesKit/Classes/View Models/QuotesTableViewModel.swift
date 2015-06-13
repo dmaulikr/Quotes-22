@@ -13,16 +13,18 @@ public class QuotesTableViewModel {
     //MARK: Properties
 
     private let realm: Realm
+    private let server: QuotesServer
     private(set) public var quotes: Results<Quote>
 
     //MARK: Initialization
 
-    public init(realm: Realm) {
+    public init(realm: Realm, server: QuotesServer) {
         self.realm = realm
+        self.server = server
         quotes = realm.objects(Quote)
     }
 
     convenience public init() {
-        self.init(realm: Realm())
+        self.init(realm: Realm(), server: QuotesServer(serverURL: NSURL(string: "http://localhost:9393")!))
     }
 }

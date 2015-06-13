@@ -22,6 +22,10 @@ public class QuotesTableViewModel {
         self.realm = realm
         self.server = server
         quotes = realm.objects(Quote)
+
+        if quotes.count == 0 {
+            fetchQuotes()
+        }
     }
 
     convenience public init() {

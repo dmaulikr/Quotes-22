@@ -27,4 +27,42 @@ public class QuotesTableViewModel {
     convenience public init() {
         self.init(realm: Realm(), server: QuotesServer(serverURL: NSURL(string: "http://localhost:9393")!))
     }
+
+    //MARK: Fetch Quotes
+
+    private func fetchQuotes() {
+        let session = NSURLSession.sharedSession()
+
+        session.dataTaskWithURL(server.serverURL + server.quotesEndpoint) { data, response, error in
+            if let error = error {
+                println("Error - \(error.localizedDescription)")
+            } else {
+                let httpResponse = response as! NSHTTPURLResponse
+
+                if httpResponse.statusCode == 200 {
+                    var jsonError: NSError?
+
+                    let quotesJSON: AnyObject? = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.allZeros, error: &jsonError)
+
+                    if let quotesJSON = quotesJSON as? [[String: String]] {
+                        var quotes = [Quote]()
+
+                        for quoteJSON in quotesJSON {
+                            if let quote = quoteJSON["quote"], let author = quoteJSON["author"] {
+                                quotes.append(Quote(quote: quote, author: author))
+                            }
+                        }
+
+                        dispatch_async(dispatch_get_main_queue()) {
+                            self.realm.write {
+                                self.realm.add(quotes)
+                            }
+                        }
+                    }
+                } else {
+                    println("Error - HTTP Status Code \(httpResponse.statusCode)")
+                }
+            }
+        }.resume()
+    }
 }
